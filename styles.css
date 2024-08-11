@@ -1,0 +1,117 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 36px;
+    color: red;
+    text-align: center;
+    text-shadow: 
+      -1px -1px 0 #fff,  
+       1px -1px 0 #fff,
+      -1px  1px 0 #fff,
+       1px  1px 0 #fff; 
+    padding: 10px 0;
+    margin: 0;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  h1, h2 {
+    color: #333;
+  }
+  .hero {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .service-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .service-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .thumbnails img {
+    width: 23%; /* Adjust the percentage to control thumbnail size */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .thumbnails img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+  }
+  
+  .full-image {
+    width: 100%;
+    max-width: 1000px; /* Adjust this to limit the size of the full image */
+    text-align: center;
+  }
+  
+  .full-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .contact-form button {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }

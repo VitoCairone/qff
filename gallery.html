@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Fence & Flooring - Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Quality Fence & Flooring</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h2>Our Work</h2>
+      <p>Take a look at some of our recent fencing and flooring projects.</p>
+    </section>
+    <section class="gallery">
+        <div class="thumbnails">
+            <img src="images/img1.jpg" alt="Wooden Fence 1" onclick="showFullImage(this)" onmouseover="showFullImage(this)">
+            <img src="images/img2.jpg" alt="Wooden Fence 2" onclick="showFullImage(this)" onmouseover="showFullImage(this)">
+            <img src="images/img3.jpg" alt="Wooden Fence 3" onclick="showFullImage(this)" onmouseover="showFullImage(this)">
+            <img src="images/img4.jpg" alt="Wooden Fence 4" onclick="showFullImage(this)" onmouseover="showFullImage(this)">
+        </div>
+        <div class="full-image">
+            <img id="fullImage" src="images/img1.jpg" alt="Full view">
+        </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024&nbsp;Quality&nbsp;Fence&nbsp;&&nbsp;Flooring&nbsp;LLC | 
+        Huntsville,&nbsp;AL | 
+        (256)&nbsp;517&nbsp;&#8209;&nbsp;2410 
+        or 
+        (630)&nbsp;486&nbsp;&#8209;&nbsp;8703 | 
+        qualityfencing07@gmail.com</p>
+  </footer>
+</body>
+
+<script>
+    function showFullImage(imgElement) {
+        // Get the full-size image element
+        const fullImage = document.getElementById('fullImage');
+        
+        // Set the src of the full-size image to the clicked thumbnail's src
+        fullImage.src = imgElement.src;
+        
+        // Update the alt attribute to match the clicked thumbnail's alt
+        fullImage.alt = imgElement.alt;
+    }
+</script>
+</html>
